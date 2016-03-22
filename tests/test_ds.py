@@ -4,14 +4,14 @@ import unittest
 EXCERCISES = True
 
 if EXCERCISES:
-    from excercises.data_structures import evens, counter, csv_line, \
+    from exercises.data_structures import evens, counter, csv_line, \
                                 similar, filter_and_rank_teams
 else:
     from answers.data_structures import evens, counter, csv_line, \
                                 similar, filter_and_rank_teams
 
 
-class DataStructureExcercises(unittest.TestCase):
+class DataStructureExercises(unittest.TestCase):
     def test_evens(self):
         self.assertEqual(evens(10), [2, 4, 6, 8, 10])
         self.assertEqual(evens(11), [2, 4, 6, 8, 10])
@@ -40,16 +40,16 @@ class DataStructureExcercises(unittest.TestCase):
 
     def test_filter_and_rank_teams(self):
         items = [
-            (8, "Seahawks"), 
-            (11, "49ers"), 
+            (8, "Seahawks"),
+            (11, "49ers"),
             (12, "Green Bay"),
-            (9, "Packers"), 
+            (9, "Packers"),
             (13, "Patriots"),
             (12, "Jets"),
         ]
-        right_items = [ 
+        right_items = [
             (13, "Patriots"),
-            (12, "Jets"), 
+            (12, "Jets"),
             (11, "49ers"),
         ]
         self.assertEqual(filter_and_rank_teams(items, 11, ["Green Bay"], 3), right_items)

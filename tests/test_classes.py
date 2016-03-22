@@ -1,14 +1,14 @@
 import unittest
 
-EXCERCISES = True 
+EXCERCISES = True
 
 if EXCERCISES:
-    from excercises.classes import MyCalculator
+    from exercises.classes import MyCalculator
 else:
     from answers.classes import MyCalculator
 
-class ClassesExcercises(unittest.TestCase):
-    
+class ClassesExercises(unittest.TestCase):
+
     def test_stateless_ops(self):
 
         c = MyCalculator()

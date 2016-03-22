@@ -3,11 +3,11 @@ import unittest
 EXCERCISES = True
 
 if EXCERCISES:
-    from excercises.functions import power_list_factory, dict_updater_factory
+    from exercises.functions import power_list_factory, dict_updater_factory
 else:
     from answers.functions import power_list_factory, dict_updater_factory
 
-class FunctionExcercises(unittest.TestCase):
+class FunctionExercises(unittest.TestCase):
     def test_power_list_factory(self):
         func = power_list_factory()
         p = 2

@@ -1,8 +1,8 @@
 """
 INSTRUCTIONS:
 
-Complete these excercises one by one. 
-Check each as you go with the provided "Test with" statement. 
+Complete these exercises one by one.
+Check each as you go with the provided "Test with" statement.
 
 Happy coding!
 """
@@ -12,7 +12,7 @@ def clamp(value, hi, lo):
     """
     We want to make sure our value is in the range [lo, hi]
 
-    If value is less than, lo, return lo. If value is greater than hi, return hi, 
+    If value is less than, lo, return lo. If value is greater than hi, return hi,
     otherwise return value:
 
     @param: value (numeric)
@@ -21,14 +21,14 @@ def clamp(value, hi, lo):
     @returns: numeric
 
     Test with:
-    $ py.test tests/test_syntax.py::SyntaxExcercises::test_clamp
+    $ py.test tests/test_syntax.py::SyntaxExercises::test_clamp
     """
     return None
 
 
 def char_range(string, a, b):
     """
-    Return a substring of the original going from character 
+    Return a substring of the original going from character
     at index a to character at index b (inclusive!).
 
     @param: string (str)

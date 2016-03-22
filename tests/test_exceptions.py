@@ -3,11 +3,11 @@ import unittest
 EXCERCISES = True
 
 if EXCERCISES:
-    from excercises.exceptions import add_and_divide, throw_my_exception, ArgIsNoneException
+    from exercises.exceptions import add_and_divide, throw_my_exception, ArgIsNoneException
 else:
     from answers.exceptions import add_and_divide, throw_my_exception, ArgIsNoneException
 
-class ExceptionExcercises(unittest.TestCase):
+class ExceptionExercises(unittest.TestCase):
     def test_add_and_divide(self):
         self.assertEqual(add_and_divide(10, 3), (10 + 3) / 3)
         self.assertEqual(add_and_divide(10, 0), 10)

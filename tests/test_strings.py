@@ -3,20 +3,20 @@ import unittest
 EXCERCISES = True
 
 if EXCERCISES:
-    from excercises.strings import string_formatting, extract_words, \
+    from exercises.strings import string_formatting, extract_words, \
         only_alphanumeric, drumpf, extract_usa_phone_numbers
 else:
     from answers.strings import string_formatting, extract_words, \
         only_alphanumeric, drumpf, extract_usa_phone_numbers
 
 
-class StringExcercises(unittest.TestCase):
+class StringExercises(unittest.TestCase):
     def test_string_formatting(self):
         value = 100.01887
         amount = 0.00293911
-        item = "uranium" 
+        item = "uranium"
         self.assertEqual(
-            string_formatting(amount, value, item), 
+            string_formatting(amount, value, item),
             '0.00294 grams of uranium cost $100.02')
 
     def test_extract_words(self):
@@ -26,7 +26,7 @@ class StringExcercises(unittest.TestCase):
 
         sent = "  \tThis\n is a great. Story of mine it's quite   wonderful\n\n\n\t"
         self.assertEqual(extract_words(sent), [
-            'this', 'is', 'a', 'great', 'story', 
+            'this', 'is', 'a', 'great', 'story',
             'of', 'mine', 'it\'s', 'quite', 'wonderful'])
 
     def test_only_alphanumeric(self):
@@ -38,7 +38,7 @@ class StringExcercises(unittest.TestCase):
     def test_drumpf(self):
         s = "Donald Trump has golden hair."
         self.assertEqual(drumpf(s), "Donald Drumpf has golden hair.")
-    
+
     def test_extract_usa_phone_numbers(self):
         text = '4023105900 afjeiwfh2f, 483-1239283 (420)-328-2131'
         self.assertEqual(extract_usa_phone_numbers(text), [

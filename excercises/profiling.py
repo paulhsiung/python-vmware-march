@@ -2,31 +2,31 @@
 PROFILING EXCERCISES:
 ====
 
-1) Excercise: `cProfile`
+1) Exercise: `cProfile`
 
-Try using `cProfile` via `cprofilev`. Make sure you can get up the browser page. 
+Try using `cProfile` via `cprofilev`. Make sure you can get up the browser page.
 
-How useful is this for a small file / project like `excercises/profiling.py`? Why?
+How useful is this for a small file / project like `exercises/profiling.py`? Why?
 
-2) Excercise: `line_profiler`
+2) Exercise: `line_profiler`
 
-Try using `line_profiler` as described in the slides.  
+Try using `line_profiler` as described in the slides.
 
-- Which lines are taking the most time? Can you optimize them? 
+- Which lines are taking the most time? Can you optimize them?
 - Which changes helped the most? Can you verify this in the general case with `timeit` to show your points?
 
 """
 
-def primes(n): 
+def primes(n):
     if n == 2:
         return [2]
     elif n < 2:
         return []
-    
+
     s = range(3, n + 1, 2)
     mroot = n ** 0.5
     half = (n + 1) / 2 - 1
-    
+
     i = 0
     m = 3
     while m <= mroot:

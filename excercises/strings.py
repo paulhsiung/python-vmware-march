@@ -3,7 +3,7 @@ import re
 def string_formatting(amount, value, item):
     """
     Return a string with the following formatting:
-    
+
         '<floating to 5 decimal places> grams of <string> cost $<floating money format>'
 
     Ensure you round to the nearest correct decimal place!
@@ -14,7 +14,7 @@ def string_formatting(amount, value, item):
     @returns: string
 
     Test with:
-    $ py.test tests/test_strings.py::StringExcercises::test_string_formatting
+    $ py.test tests/test_strings.py::StringExercises::test_string_formatting
     """
     return None
 
@@ -30,23 +30,23 @@ def extract_words(sentence):
         4) Always all lowercase
 
     Test with:
-    $ py.test tests/test_strings.py::StringExcercises::test_extract_words
+    $ py.test tests/test_strings.py::StringExercises::test_extract_words
     """
     return None
 
 
 def only_alphanumeric(string):
     """
-    Given a string, return the string, but with ONLY alpha numeric characters 
-    remaining. Order should otherwise stay the same. 
+    Given a string, return the string, but with ONLY alpha numeric characters
+    remaining. Order should otherwise stay the same.
 
     You may assume only ASCII characters :)
 
     HINT: Use the function .isalnum() to test whether a string or substring is
-        alphanumeric. 
+        alphanumeric.
 
     Test with:
-    $ py.test tests/test_strings.py::StringExcercises::test_only_alphanumeric
+    $ py.test tests/test_strings.py::StringExercises::test_only_alphanumeric
     """
     return None
 
@@ -56,7 +56,7 @@ def drumpf(string):
     Replace all instance of "Trump" with "Drumpf", and return the new sentence.
 
     Test with:
-    $ py.test tests/test_strings.py::StringExcercises::test_drumpf 
+    $ py.test tests/test_strings.py::StringExercises::test_drumpf
     """
     return None
 
@@ -72,18 +72,18 @@ def extract_usa_phone_numbers(text):
                   v
         "402-332-2393"
            ^
-           | 
-        area_code (optional)  
+           |
+        area_code (optional)
 
     The leading one is optional, as are the dashes. The parenthesis are
-    optional, but must have both the closing and opening if present. 
+    optional, but must have both the closing and opening if present.
 
     Any mistakenly retrieved phone numbers that are invalid will cause the test to fail.
 
-    Returns a list of strings 
+    Returns a list of strings
 
     Test with:
-    $ py.test tests/test_strings.py::StringExcercises::test_extract_usa_phone_numbers 
+    $ py.test tests/test_strings.py::StringExercises::test_extract_usa_phone_numbers
     """
     return None
 

@@ -1,7 +1,7 @@
 """
-A calculator that keeps a memory of its past executions. 
+A calculator that keeps a memory of its past executions.
 
-Your job is to finish MyCalculator class. It must inheirit from 
+Your job is to finish MyCalculator class. It must inheirit from
 BaseCalculator, and should work like the following:
 
     c = MyCalculator()     # to start with total=0
@@ -20,7 +20,7 @@ And stateful operations using the same functions, but with single args:
     c = MyCalculator()           # to start with total=0
     c.add(2)
     print c.get_current_total()  # prints 12
-    c.multiply(10) 
+    c.multiply(10)
     print c.get_current_total()  # prints 120
 
     # And you should be able to get a list of all past states of total
@@ -28,7 +28,7 @@ And stateful operations using the same functions, but with single args:
 
 Run tests with:
 
-    $ py.test tests/test_classes.py::ClassesExcercises
+    $ py.test tests/test_classes.py::ClassesExercises
 """
 
 class BaseCalculator(object):
