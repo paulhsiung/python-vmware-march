@@ -1,8 +1,8 @@
 import unittest
 
-EXCERCISES = True
+EXERCISES = True
 
-if EXCERCISES:
+if EXERCISES:
     from exercises.functions import power_list_factory, dict_updater_factory
 else:
     from answers.functions import power_list_factory, dict_updater_factory

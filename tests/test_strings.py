@@ -1,8 +1,8 @@
 import unittest
 
-EXCERCISES = True
+EXERCISES = True
 
-if EXCERCISES:
+if EXERCISES:
     from exercises.strings import string_formatting, extract_words, \
         only_alphanumeric, drumpf, extract_usa_phone_numbers
 else:

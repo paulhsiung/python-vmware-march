@@ -1,9 +1,9 @@
 import unittest
 
 
-EXCERCISES = True
+EXERCISES = True
 
-if EXCERCISES:
+if EXERCISES:
     from exercises.data_structures import evens, counter, csv_line, \
                                 similar, filter_and_rank_teams
 else:

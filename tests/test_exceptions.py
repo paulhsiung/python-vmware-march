@@ -1,8 +1,8 @@
 import unittest
 
-EXCERCISES = True
+EXERCISES = True
 
-if EXCERCISES:
+if EXERCISES:
     from exercises.exceptions import add_and_divide, throw_my_exception, ArgIsNoneException
 else:
     from answers.exceptions import add_and_divide, throw_my_exception, ArgIsNoneException

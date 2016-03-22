@@ -1,5 +1,5 @@
 """
-PROFILING EXCERCISES:
+PROFILING EXERCISES:
 ====
 
 1) Exercise: `cProfile`

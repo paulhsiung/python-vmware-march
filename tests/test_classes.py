@@ -1,8 +1,8 @@
 import unittest
 
-EXCERCISES = True
+EXERCISES = True
 
-if EXCERCISES:
+if EXERCISES:
     from exercises.classes import MyCalculator
 else:
     from answers.classes import MyCalculator

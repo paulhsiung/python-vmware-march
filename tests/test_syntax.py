@@ -1,8 +1,8 @@
 import unittest
 
-EXCERCISES = True
+EXERCISES = True
 
-if EXCERCISES:
+if EXERCISES:
     from excercises.syntax import clamp, char_range
 else:
     from answers.syntax import clamp, char_range
@@ -21,4 +21,4 @@ class SyntaxExcercises(unittest.TestCase):
         self.assertEqual(char_range("apple", 1, 3), "ppl")
         self.assertEqual(char_range("apple", 0, 0), "a")
         self.assertEqual(char_range("apple", 3, 3), "l")
-        
+
