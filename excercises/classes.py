@@ -1,7 +1,7 @@
 """
-A calculator that keeps a memory of its past executions. 
+A calculator that keeps a memory of its past executions.
 
-Your job is to finish MyCalculator class. It must inheirit from 
+Your job is to finish MyCalculator class. It must inheirit from
 BaseCalculator, and should work like the following:
 
     c = MyCalculator()     # to start with total=0
@@ -20,7 +20,7 @@ And stateful operations using the same functions, but with single args:
     c = MyCalculator()           # to start with total=0
     c.add(2)
     print c.get_current_total()  # prints 12
-    c.multiply(10) 
+    c.multiply(10)
     print c.get_current_total()  # prints 120
 
     # And you should be able to get a list of all past states of total
@@ -40,9 +40,44 @@ class BaseCalculator(object):
 
 class MyCalculator(BaseCalculator):
 
-    def __init__(self, starting_total=None):
-        # fill in constructor as needed here
-        pass
+    def __init__(self, starting_total=0):
+        BaseCalculator.__init__(self)
+        self.total = starting_total
+        self.stack = [starting_total]
+
+    def get_current_total(self):
+        return self.total
+
+    def get_past_totals(self):
+        return self.stack
+
+    def add(self, x, y = None):
+        if y is None:
+            self.total = self.total + x
+            self.stack.append(self.total)
+        else:
+            return x + y
+
+    def multiply(self, x, y = None):
+        if y is None:
+            self.total = self.total * x
+            self.stack.append(self.total)
+        else:
+            return x * y
+
+    def subtract(self, x, y = None):
+        if y is None:
+            self.total = self.total - x
+            self.stack.append(self.total)
+        else:
+            return x - y
+
+    def divide(self, x, y = None):
+        if y is None:
+            self.total = self.total / float(x)
+            self.stack.append(self.total)
+        else:
+            return x / float(y)
 
     # fill in needed methods and helper methods here
     # ...
