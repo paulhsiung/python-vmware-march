@@ -1,0 +1,6 @@
+ipython
+ipywidgets
+pytest
+requests
+virtualenv
+virtualenvwrapper
