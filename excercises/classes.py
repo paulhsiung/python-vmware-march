@@ -51,34 +51,24 @@ class MyCalculator(BaseCalculator):
     def get_past_totals(self):
         return self.stack
 
-    def add(self, x, y = None):
+    def dothis(self, func, x, y):
+        print x, y
         if y is None:
-            self.total = self.total + x
+            self.total = func(self.total, x)
             self.stack.append(self.total)
         else:
-            return x + y
+            return func(x, y)
+
+    def add(self, x, y = None):
+        return self.dothis(lambda a, b: a + b, x, y)
 
     def multiply(self, x, y = None):
-        if y is None:
-            self.total = self.total * x
-            self.stack.append(self.total)
-        else:
-            return x * y
+        return self.dothis(lambda a, b: a * b, x, y)
 
     def subtract(self, x, y = None):
-        if y is None:
-            self.total = self.total - x
-            self.stack.append(self.total)
-        else:
-            return x - y
+        return self.dothis(lambda a, b: a - b, x, y)
 
     def divide(self, x, y = None):
-        if y is None:
-            self.total = self.total / float(x)
-            self.stack.append(self.total)
-        else:
-            return x / float(y)
+        return self.dothis(lambda a, b: a / float(b), x, y)
 
-    # fill in needed methods and helper methods here
-    # ...
 
